@@ -1,6 +1,7 @@
+let config = require('../config')
 let MongoClient = require('mongodb').MongoClient;
 
-let url = "mongodb://127.0.0.1:27017/fishy";
+let url = config.mongoURL;
 
 module.exports = {
     connect : function(){
@@ -76,11 +77,7 @@ module.exports = {
                 players.find({},{projection: {_id: 0}}).toArray(function(err, res) {
                     if(err)reject(err)
                     else {
-                        let players = {}
-                        for(let player of res){
-                            players[player.id] = player
-                        }
-                        resolve(players)
+                        resolve(res)
                     }
                 });
             }catch(err){console.log(err)}
