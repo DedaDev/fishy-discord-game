@@ -1,6 +1,6 @@
 {   
     "defaultPrefix" : "!",
-    "botToken" : "MzQyODMwNjEzNDI3OTEyNzE0.Drz_Bg.yYUIlKSuDXM9f_Yw4btkox_VslY",
+    "botToken" : "",
     "mongoURL" : "mongodb://127.0.0.1:27017/fishy",
     "secToReact" : 6
 }
