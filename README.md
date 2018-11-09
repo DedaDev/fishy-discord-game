@@ -9,5 +9,5 @@ Fishy uses MongoDB for database and Eris.js for discord library.
 - set up your mongo database by importing db files from /db folder
 - fill bot information and settings in config.json file 
 
-    npm install
-    node server.js
+    `npm install`
+    `node server.js`
